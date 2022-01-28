@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProdavnicaIgracakaDataSet" targetNamespace="http://tempuri.org/ProdavnicaIgracakaDataSet1.xsd" xmlns:mstns="http://tempuri.org/ProdavnicaIgracakaDataSet1.xsd" xmlns="http://tempuri.org/ProdavnicaIgracakaDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProdavnicaIgracakaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProdavnicaIgracakaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdavnicaIgracaka.Properties.Settings.GlobalReference.Default.ProdavnicaIgracakaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prikazProizvodaTableAdapter" GeneratorDataComponentClassName="prikazProizvodaTableAdapter" Name="prikazProizvoda" UserDataComponentName="prikazProizvodaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProdavnicaIgracakaConnectionString (Settings)" DbObjectName="ProdavnicaIgracaka.dbo.prikazProizvoda" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idP, nazivP, cenaP, ukupnaKol, nazivKat, nazivB FROM dbo.prikazProizvoda</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idP" DataSetColumn="idP" />
+              <Mapping SourceColumn="nazivP" DataSetColumn="nazivP" />
+              <Mapping SourceColumn="cenaP" DataSetColumn="cenaP" />
+              <Mapping SourceColumn="ukupnaKol" DataSetColumn="ukupnaKol" />
+              <Mapping SourceColumn="nazivKat" DataSetColumn="nazivKat" />
+              <Mapping SourceColumn="nazivB" DataSetColumn="nazivB" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProdavnicaIgracakaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProdavnicaIgracakaDataSet" msprop:Generator_UserDSName="ProdavnicaIgracakaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="prikazProizvoda" msprop:Generator_TableClassName="prikazProizvodaDataTable" msprop:Generator_TableVarName="tableprikazProizvoda" msprop:Generator_TablePropName="prikazProizvoda" msprop:Generator_RowDeletingName="prikazProizvodaRowDeleting" msprop:Generator_RowChangingName="prikazProizvodaRowChanging" msprop:Generator_RowEvHandlerName="prikazProizvodaRowChangeEventHandler" msprop:Generator_RowDeletedName="prikazProizvodaRowDeleted" msprop:Generator_UserTableName="prikazProizvoda" msprop:Generator_RowChangedName="prikazProizvodaRowChanged" msprop:Generator_RowEvArgName="prikazProizvodaRowChangeEvent" msprop:Generator_RowClassName="prikazProizvodaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idP" msprop:Generator_ColumnVarNameInTable="columnidP" msprop:Generator_ColumnPropNameInRow="idP" msprop:Generator_ColumnPropNameInTable="idPColumn" msprop:Generator_UserColumnName="idP" type="xs:int" />
+              <xs:element name="nazivP" msprop:Generator_ColumnVarNameInTable="columnnazivP" msprop:Generator_ColumnPropNameInRow="nazivP" msprop:Generator_ColumnPropNameInTable="nazivPColumn" msprop:Generator_UserColumnName="nazivP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cenaP" msprop:Generator_ColumnVarNameInTable="columncenaP" msprop:Generator_ColumnPropNameInRow="cenaP" msprop:Generator_ColumnPropNameInTable="cenaPColumn" msprop:Generator_UserColumnName="cenaP" type="xs:float" />
+              <xs:element name="ukupnaKol" msprop:Generator_ColumnVarNameInTable="columnukupnaKol" msprop:Generator_ColumnPropNameInRow="ukupnaKol" msprop:Generator_ColumnPropNameInTable="ukupnaKolColumn" msprop:Generator_UserColumnName="ukupnaKol" type="xs:int" minOccurs="0" />
+              <xs:element name="nazivKat" msprop:Generator_ColumnVarNameInTable="columnnazivKat" msprop:Generator_ColumnPropNameInRow="nazivKat" msprop:Generator_ColumnPropNameInTable="nazivKatColumn" msprop:Generator_UserColumnName="nazivKat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nazivB" msprop:Generator_ColumnVarNameInTable="columnnazivB" msprop:Generator_ColumnPropNameInRow="nazivB" msprop:Generator_ColumnPropNameInTable="nazivBColumn" msprop:Generator_UserColumnName="nazivB">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:prikazProizvoda" />
+      <xs:field xpath="mstns:idP" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

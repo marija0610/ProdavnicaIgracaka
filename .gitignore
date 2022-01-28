@@ -1,0 +1,13 @@
+.editorconfig
+packages
+.vs
+*.xss
+*.xsc
+*.resx
+ProdavnicaIgracaka/bin
+ProdavnicaIgracaka/obj
+ProdavnicaIgracaka/FakesAssemblies
+ProdavnicaIgracaka/SqlServerTypes
+ProdavnicaIgracaka/Properties
+ProdavnicaIgracaka/App.config
+*.txt

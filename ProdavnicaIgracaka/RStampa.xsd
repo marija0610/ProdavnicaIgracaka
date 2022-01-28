@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RStampa" targetNamespace="http://tempuri.org/RStampa.xsd" xmlns:mstns="http://tempuri.org/RStampa.xsd" xmlns="http://tempuri.org/RStampa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProdavnicaIgracakaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProdavnicaIgracakaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdavnicaIgracaka.Properties.Settings.GlobalReference.Default.ProdavnicaIgracakaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="racun_reportTableAdapter" GeneratorDataComponentClassName="racun_reportTableAdapter" Name="racun_report" UserDataComponentName="racun_reportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProdavnicaIgracakaConnectionString (Settings)" DbObjectName="ProdavnicaIgracaka.dbo.racun_report" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BrRacuna, datum, Prodavac, ukupanIznos FROM dbo.racun_report</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BrRacuna" DataSetColumn="BrRacuna" />
+              <Mapping SourceColumn="datum" DataSetColumn="datum" />
+              <Mapping SourceColumn="Prodavac" DataSetColumn="Prodavac" />
+              <Mapping SourceColumn="ukupanIznos" DataSetColumn="ukupanIznos" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RStampa" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RStampa" msprop:Generator_UserDSName="RStampa">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="racun_report" msprop:Generator_TableClassName="racun_reportDataTable" msprop:Generator_TableVarName="tableracun_report" msprop:Generator_TablePropName="racun_report" msprop:Generator_RowDeletingName="racun_reportRowDeleting" msprop:Generator_RowChangingName="racun_reportRowChanging" msprop:Generator_RowEvHandlerName="racun_reportRowChangeEventHandler" msprop:Generator_RowDeletedName="racun_reportRowDeleted" msprop:Generator_UserTableName="racun_report" msprop:Generator_RowChangedName="racun_reportRowChanged" msprop:Generator_RowEvArgName="racun_reportRowChangeEvent" msprop:Generator_RowClassName="racun_reportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BrRacuna" msprop:Generator_ColumnVarNameInTable="columnBrRacuna" msprop:Generator_ColumnPropNameInRow="BrRacuna" msprop:Generator_ColumnPropNameInTable="BrRacunaColumn" msprop:Generator_UserColumnName="BrRacuna" type="xs:int" />
+              <xs:element name="datum" msprop:Generator_ColumnVarNameInTable="columndatum" msprop:Generator_ColumnPropNameInRow="datum" msprop:Generator_ColumnPropNameInTable="datumColumn" msprop:Generator_UserColumnName="datum" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Prodavac" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProdavac" msprop:Generator_ColumnPropNameInRow="Prodavac" msprop:Generator_ColumnPropNameInTable="ProdavacColumn" msprop:Generator_UserColumnName="Prodavac" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ukupanIznos" msprop:Generator_ColumnVarNameInTable="columnukupanIznos" msprop:Generator_ColumnPropNameInRow="ukupanIznos" msprop:Generator_ColumnPropNameInTable="ukupanIznosColumn" msprop:Generator_UserColumnName="ukupanIznos" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:racun_report" />
+      <xs:field xpath="mstns:BrRacuna" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

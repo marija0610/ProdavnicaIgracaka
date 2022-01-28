@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SRStampa" targetNamespace="http://tempuri.org/SRStampa.xsd" xmlns:mstns="http://tempuri.org/SRStampa.xsd" xmlns="http://tempuri.org/SRStampa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProdavnicaIgracakaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProdavnicaIgracakaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdavnicaIgracaka.Properties.Settings.GlobalReference.Default.ProdavnicaIgracakaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stavkeRacuna_reportTableAdapter" GeneratorDataComponentClassName="stavkeRacuna_reportTableAdapter" Name="stavkeRacuna_report" UserDataComponentName="stavkeRacuna_reportTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProdavnicaIgracakaConnectionString (Settings)" DbObjectName="ProdavnicaIgracaka.dbo.stavkeRacuna_report" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nazivP, cenaP, kupljenaKol FROM dbo.stavkeRacuna_report</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nazivP" DataSetColumn="nazivP" />
+              <Mapping SourceColumn="cenaP" DataSetColumn="cenaP" />
+              <Mapping SourceColumn="kupljenaKol" DataSetColumn="kupljenaKol" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SRStampa" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="SRStampa" msprop:Generator_UserDSName="SRStampa">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="stavkeRacuna_report" msprop:Generator_TableClassName="stavkeRacuna_reportDataTable" msprop:Generator_TableVarName="tablestavkeRacuna_report" msprop:Generator_TablePropName="stavkeRacuna_report" msprop:Generator_RowDeletingName="stavkeRacuna_reportRowDeleting" msprop:Generator_RowChangingName="stavkeRacuna_reportRowChanging" msprop:Generator_RowEvHandlerName="stavkeRacuna_reportRowChangeEventHandler" msprop:Generator_RowDeletedName="stavkeRacuna_reportRowDeleted" msprop:Generator_UserTableName="stavkeRacuna_report" msprop:Generator_RowChangedName="stavkeRacuna_reportRowChanged" msprop:Generator_RowEvArgName="stavkeRacuna_reportRowChangeEvent" msprop:Generator_RowClassName="stavkeRacuna_reportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nazivP" msprop:Generator_ColumnVarNameInTable="columnnazivP" msprop:Generator_ColumnPropNameInRow="nazivP" msprop:Generator_ColumnPropNameInTable="nazivPColumn" msprop:Generator_UserColumnName="nazivP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cenaP" msprop:Generator_ColumnVarNameInTable="columncenaP" msprop:Generator_ColumnPropNameInRow="cenaP" msprop:Generator_ColumnPropNameInTable="cenaPColumn" msprop:Generator_UserColumnName="cenaP" type="xs:float" />
+              <xs:element name="kupljenaKol" msprop:Generator_ColumnVarNameInTable="columnkupljenaKol" msprop:Generator_ColumnPropNameInRow="kupljenaKol" msprop:Generator_ColumnPropNameInTable="kupljenaKolColumn" msprop:Generator_UserColumnName="kupljenaKol" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

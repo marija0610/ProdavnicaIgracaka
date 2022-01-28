@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProdavnicaIgracakaDataSet4" targetNamespace="http://tempuri.org/ProdavnicaIgracakaDataSet4.xsd" xmlns:mstns="http://tempuri.org/ProdavnicaIgracakaDataSet4.xsd" xmlns="http://tempuri.org/ProdavnicaIgracakaDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProdavnicaIgracakaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProdavnicaIgracakaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdavnicaIgracaka.Properties.Settings.GlobalReference.Default.ProdavnicaIgracakaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_ZaposleniTableAdapter" GeneratorDataComponentClassName="view_ZaposleniTableAdapter" Name="view_Zaposleni" UserDataComponentName="view_ZaposleniTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProdavnicaIgracakaConnectionString (Settings)" DbObjectName="ProdavnicaIgracaka.dbo.view_Zaposleni" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idZ, ime, prezime, korIme, lozinka, datZap, plata, adresaZ, emailZ, telefonZ, idPosla, aktivan FROM dbo.view_Zaposleni</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idZ" DataSetColumn="idZ" />
+              <Mapping SourceColumn="ime" DataSetColumn="ime" />
+              <Mapping SourceColumn="prezime" DataSetColumn="prezime" />
+              <Mapping SourceColumn="korIme" DataSetColumn="korIme" />
+              <Mapping SourceColumn="lozinka" DataSetColumn="lozinka" />
+              <Mapping SourceColumn="datZap" DataSetColumn="datZap" />
+              <Mapping SourceColumn="plata" DataSetColumn="plata" />
+              <Mapping SourceColumn="adresaZ" DataSetColumn="adresaZ" />
+              <Mapping SourceColumn="emailZ" DataSetColumn="emailZ" />
+              <Mapping SourceColumn="telefonZ" DataSetColumn="telefonZ" />
+              <Mapping SourceColumn="idPosla" DataSetColumn="idPosla" />
+              <Mapping SourceColumn="aktivan" DataSetColumn="aktivan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProdavnicaIgracakaDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProdavnicaIgracakaDataSet4" msprop:Generator_UserDSName="ProdavnicaIgracakaDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_Zaposleni" msprop:Generator_TableClassName="view_ZaposleniDataTable" msprop:Generator_TableVarName="tableview_Zaposleni" msprop:Generator_TablePropName="view_Zaposleni" msprop:Generator_RowDeletingName="view_ZaposleniRowDeleting" msprop:Generator_RowChangingName="view_ZaposleniRowChanging" msprop:Generator_RowEvHandlerName="view_ZaposleniRowChangeEventHandler" msprop:Generator_RowDeletedName="view_ZaposleniRowDeleted" msprop:Generator_UserTableName="view_Zaposleni" msprop:Generator_RowChangedName="view_ZaposleniRowChanged" msprop:Generator_RowEvArgName="view_ZaposleniRowChangeEvent" msprop:Generator_RowClassName="view_ZaposleniRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idZ" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidZ" msprop:Generator_ColumnPropNameInRow="idZ" msprop:Generator_ColumnPropNameInTable="idZColumn" msprop:Generator_UserColumnName="idZ" type="xs:int" />
+              <xs:element name="ime" msprop:Generator_ColumnVarNameInTable="columnime" msprop:Generator_ColumnPropNameInRow="ime" msprop:Generator_ColumnPropNameInTable="imeColumn" msprop:Generator_UserColumnName="ime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prezime" msprop:Generator_ColumnVarNameInTable="columnprezime" msprop:Generator_ColumnPropNameInRow="prezime" msprop:Generator_ColumnPropNameInTable="prezimeColumn" msprop:Generator_UserColumnName="prezime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="korIme" msprop:Generator_ColumnVarNameInTable="columnkorIme" msprop:Generator_ColumnPropNameInRow="korIme" msprop:Generator_ColumnPropNameInTable="korImeColumn" msprop:Generator_UserColumnName="korIme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="lozinka" msprop:Generator_ColumnVarNameInTable="columnlozinka" msprop:Generator_ColumnPropNameInRow="lozinka" msprop:Generator_ColumnPropNameInTable="lozinkaColumn" msprop:Generator_UserColumnName="lozinka">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="datZap" msprop:Generator_ColumnVarNameInTable="columndatZap" msprop:Generator_ColumnPropNameInRow="datZap" msprop:Generator_ColumnPropNameInTable="datZapColumn" msprop:Generator_UserColumnName="datZap" type="xs:dateTime" />
+              <xs:element name="plata" msprop:Generator_ColumnVarNameInTable="columnplata" msprop:Generator_ColumnPropNameInRow="plata" msprop:Generator_ColumnPropNameInTable="plataColumn" msprop:Generator_UserColumnName="plata" type="xs:double" />
+              <xs:element name="adresaZ" msprop:Generator_ColumnVarNameInTable="columnadresaZ" msprop:Generator_ColumnPropNameInRow="adresaZ" msprop:Generator_ColumnPropNameInTable="adresaZColumn" msprop:Generator_UserColumnName="adresaZ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emailZ" msprop:Generator_ColumnVarNameInTable="columnemailZ" msprop:Generator_ColumnPropNameInRow="emailZ" msprop:Generator_ColumnPropNameInTable="emailZColumn" msprop:Generator_UserColumnName="emailZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="telefonZ" msprop:Generator_ColumnVarNameInTable="columntelefonZ" msprop:Generator_ColumnPropNameInRow="telefonZ" msprop:Generator_ColumnPropNameInTable="telefonZColumn" msprop:Generator_UserColumnName="telefonZ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idPosla" msprop:Generator_ColumnVarNameInTable="columnidPosla" msprop:Generator_ColumnPropNameInRow="idPosla" msprop:Generator_ColumnPropNameInTable="idPoslaColumn" msprop:Generator_UserColumnName="idPosla" type="xs:int" />
+              <xs:element name="aktivan" msprop:Generator_ColumnVarNameInTable="columnaktivan" msprop:Generator_ColumnPropNameInRow="aktivan" msprop:Generator_ColumnPropNameInTable="aktivanColumn" msprop:Generator_UserColumnName="aktivan" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_Zaposleni" />
+      <xs:field xpath="mstns:idZ" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

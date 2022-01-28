@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProdavnicaIgracakaDataSet3" targetNamespace="http://tempuri.org/ProdavnicaIgracakaDataSet3.xsd" xmlns:mstns="http://tempuri.org/ProdavnicaIgracakaDataSet3.xsd" xmlns="http://tempuri.org/ProdavnicaIgracakaDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProdavnicaIgracakaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProdavnicaIgracakaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdavnicaIgracaka.Properties.Settings.GlobalReference.Default.ProdavnicaIgracakaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="poredjajOdNajprodavanijegTableAdapter" GeneratorDataComponentClassName="poredjajOdNajprodavanijegTableAdapter" Name="poredjajOdNajprodavanijeg" UserDataComponentName="poredjajOdNajprodavanijegTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProdavnicaIgracakaConnectionString (Settings)" DbObjectName="ProdavnicaIgracaka.dbo.poredjajOdNajprodavanijeg" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idP, [Naziv proizvoda], Prodata_kolicina FROM dbo.poredjajOdNajprodavanijeg</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idP" DataSetColumn="idP" />
+              <Mapping SourceColumn="Naziv proizvoda" DataSetColumn="Naziv proizvoda" />
+              <Mapping SourceColumn="Prodata_kolicina" DataSetColumn="Prodata_kolicina" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProdavnicaIgracakaDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProdavnicaIgracakaDataSet3" msprop:Generator_UserDSName="ProdavnicaIgracakaDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="poredjajOdNajprodavanijeg" msprop:Generator_TableClassName="poredjajOdNajprodavanijegDataTable" msprop:Generator_TableVarName="tableporedjajOdNajprodavanijeg" msprop:Generator_TablePropName="poredjajOdNajprodavanijeg" msprop:Generator_RowDeletingName="poredjajOdNajprodavanijegRowDeleting" msprop:Generator_RowChangingName="poredjajOdNajprodavanijegRowChanging" msprop:Generator_RowEvHandlerName="poredjajOdNajprodavanijegRowChangeEventHandler" msprop:Generator_RowDeletedName="poredjajOdNajprodavanijegRowDeleted" msprop:Generator_UserTableName="poredjajOdNajprodavanijeg" msprop:Generator_RowChangedName="poredjajOdNajprodavanijegRowChanged" msprop:Generator_RowEvArgName="poredjajOdNajprodavanijegRowChangeEvent" msprop:Generator_RowClassName="poredjajOdNajprodavanijegRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idP" msprop:Generator_ColumnVarNameInTable="columnidP" msprop:Generator_ColumnPropNameInRow="idP" msprop:Generator_ColumnPropNameInTable="idPColumn" msprop:Generator_UserColumnName="idP" type="xs:int" />
+              <xs:element name="Naziv_x0020_proizvoda" msprop:Generator_ColumnVarNameInTable="columnNaziv_proizvoda" msprop:Generator_ColumnPropNameInRow="Naziv_proizvoda" msprop:Generator_ColumnPropNameInTable="Naziv_proizvodaColumn" msprop:Generator_UserColumnName="Naziv proizvoda">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prodata_kolicina" msprop:Generator_ColumnVarNameInTable="columnProdata_kolicina" msprop:Generator_ColumnPropNameInRow="Prodata_kolicina" msprop:Generator_ColumnPropNameInTable="Prodata_kolicinaColumn" msprop:Generator_UserColumnName="Prodata_kolicina" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:poredjajOdNajprodavanijeg" />
+      <xs:field xpath="mstns:idP" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
